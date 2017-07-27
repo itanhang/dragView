@@ -1,0 +1,86 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td { margin:0; padding:0; }
+html, body { font:12px/1.5 "Microsoft YaHei",Arial,Verdana; color:#666 }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+small{ font-size:12px; }
+ul, ol, li { list-style:none; }
+a { text-decoration:none; color:#666 }
+a:hover { color:#cf000e !important }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+img { border:none }
+textarea { outline: 0; }
+button, input, select, textarea { font-size:100%; outline:0 }
+table { border-collapse:collapse; border-spacing:0; }
+.w {width: 1400px;margin: 0 auto;}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;} .clearfix { *zoom:1; }
+
+#header, #footer {padding: 50px 0;text-align: center;font-size: 45px;color: #ddd;background-color: #f8f8f8}
+#main {padding: 30px 0}
+
+.home-images {margin-top: 20px}
+.home-images .item {float: left;width: 338px;margin-left: 16px;overflow: hidden;}
+.home-images .item img {display: block;width: 100%;}
+.home-images .item.first {margin-left: 0}
+.home-images .item img { -webkit-transition: all .5s ease 0s;-o-transition: all .5s ease 0s;transition: all .5s ease 0s;}
+.home-images .item a:hover img {-webkit-transform: scale(1.03);-ms-transform: scale(1.03);transform: scale(1.03);}
+
+.admin-view-control {position: fixed;left: 0;top: 0;bottom: 0;z-index: 99998;width: 200px;overflow: hidden;background: #33414e;box-shadow: 0 0 10px #000}
+.admin-view-control .control-scroll {padding-right: 25px;width: 200px;height: 100%;overflow-y: scroll;}
+.admin-view-control .control-body {width: 200px;min-height: 100%;color: #ddd}
+
+.admin-view-control .title {padding: 20px 10px 10px}
+.admin-view-control .title h1 {text-align: center;font-size:16px;font-weight: normal;line-height: 30px;color: #fff}
+.admin-view-control .title .btn {
+    display: block;margin-top: 12px;width: 180px;text-align: center;
+    line-height: 30px;border: none;font-size:12px;color: #3fbae4;cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: none;
+    border: 2px solid rgba(63,186,228,0.6);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.admin-view-control .title .btn-save {background: rgba(63,186,228,0.6);border: none;padding:2px 0;font-size: 14px;color: #fff}
+.admin-view-control .title .btn:hover {background: rgba(63,186,228,1);color: #fff}
+
+.admin-view-control dl.views {width: 180px;padding: 0 10px;clear: both;margin-top: 15px}
+.admin-view-control dl.views dt {font-size: 14px;color: #888}
+.admin-view-control .view-item {width: 100%;height: 50px;margin-top: 10px;box-sizing: border-box;overflow: hidden}
+.admin-view-control .view-item.active { border: 1px dashed rgba(63,186,228,0.8); opacity: 0.6; transition: all .3s ease 0s;}
+.admin-view-control .view-box {width: 180px;height: 50px;background: #666}
+.admin-view-control .view-item .tempText {cursor: default;width:100%;height:100%;line-height: 50px;text-align:center;font-size: 14px;color: #999}
+
+.admin-view-page {padding-left: 200px}
+
+#drag-mask {position: fixed;width: 100%;height: 100%;left: 0;top: 0;z-index: 99998;display: none}
+#drag-view {
+    display:none;
+    position: fixed;
+    opacity: 0.95;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.dragView_panel {position: relative;min-height: 150px}
+.dragView_panel.empty {height: 50px;background: #c3deb7}
+.drag_module {position: relative}
+.drag_module_mask {background: rgba(0,0,0,0.2);position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: 99991;opacity: 0}
+.drag_module_head {position: absolute;left: 0;right: 0;top: 0;z-index: 99992;height:40px;border-bottom:1px solid rgba(0,0,0,0.1);background:rgba(0,0,0,0.08);cursor: move;display: none;}
+.drag_module_btn {position: absolute;top: 5px;right: 0;z-index: 99993;display: none}
+.drag_module_btn a {display: block;float: right;padding: 0 15px;line-height: 30px;text-align: center;background: #33414e;color: #fff;cursor: pointer;margin-right: 10px;border-radius: 2px}
+.drag_module_btn a:hover {color: #fff !important;background: #000}
+.drag_module.active .drag_module_head, .drag_module.active .drag_module_btn, .drag_module.active .drag_module_mask {display: block;opacity: 1}
+
+/* drag temp css */
+.drag_module_temp {position: static;min-height: 50px;margin-top: 20px;background: #c3deb7;box-sizing: border-box;opacity: 0.3}
+.drag_module_dash {position: absolute;z-index: 99998;left: 0;right: 0;}

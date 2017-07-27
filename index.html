@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>dragView.js</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="./jquery.dragView.js"></script>
+   </head>
+   <body>
+      <div class="admin-view-control">
+         <div class="control-scroll">
+            <div class="control-body">
+                <div class="title clearfix">
+                    <h1>可视化编辑</h1>
+                    <button type="button" class="btn btn-save"><span>保存</span></button>
+                    <button type="button" class="btn btn-exit"><span>退出</span></button>
+                </div>
+
+                <dl class="views">
+                    <dt>首页相关</dt>
+                    <dd class="view-item"><div class="view-box"><p class="tempText">拖拽板块</p></div></dd>
+                    <dd class="view-item"><div class="view-box"><p class="tempText">拖拽板块</p></div></dd>
+                    <dd class="view-item"><div class="view-box"><p class="tempText">拖拽板块</p></div></dd>
+                </dl>
+                <dl class="views">
+                    <dt>商品相关</dt>
+                    <dd class="view-item"><div class="view-box"><p class="tempText">拖拽板块</p></div></dd>
+                    <dd class="view-item"><div class="view-box"><p class="tempText">拖拽板块</p></div></dd>
+                    <dd class="view-item"><div class="view-box"><p class="tempText">拖拽板块</p></div></dd>
+                </dl>
+             </div>
+         </div>
+      </div>
+      <div class="admin-view-page">
+         <div id="header">Header</div>
+         <div id="main">
+            <div class="dragView_panel">
+
+               <div class="drag_module">
+                  <div class="drag_module_mask"></div>
+                  <div class="drag_module_head"></div>
+                  <div class="drag_module_btn">
+                     <a class="btn-delete" title="删除板块">删除</a><a class="btn-edit" title="编辑板块">编辑</a>
+                  </div>
+                  <div class="home-images">
+                     <div class="w clearfix">
+                        <div class="item first">
+                           <a href="#"><img src="images/1.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/2.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/3.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/4.jpg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="drag_module">
+                  <div class="drag_module_mask"></div>
+                  <div class="drag_module_head"></div>
+                  <div class="drag_module_btn">
+                     <a class="btn-delete" title="删除板块">删除</a><a class="btn-edit" title="编辑板块">编辑</a>
+                  </div>
+                  <div class="home-images">
+                     <div class="w clearfix">
+                        <div class="item first">
+                           <a href="#"><img src="images/1.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/2.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/3.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/4.jpg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="drag_module">
+                  <div class="drag_module_mask"></div>
+                  <div class="drag_module_head"></div>
+                  <div class="drag_module_btn">
+                     <a class="btn-delete" title="删除板块">删除</a><a class="btn-edit" title="编辑板块">编辑</a>
+                  </div>
+                  <div class="home-images">
+                     <div class="w clearfix">
+                        <div class="item first">
+                           <a href="#"><img src="images/1.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/2.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/3.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                           <a href="#"><img src="images/4.jpg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <div id="footer">Footer</div>
+      </div>
+
+      <script type="text/javascript">
+         dragView.init({
+            item: 'view-box',
+            panel: 'dragView_panel',
+            module: 'drag_module'
+         });
+      </script>
+   </body>
+</html>
