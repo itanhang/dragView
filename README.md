@@ -16,3 +16,12 @@ Demo : [https://itanhang.github.io/dragView](https://itanhang.github.io/dragView
     </div>
 </div>
 ```
+
+#### JS初始化
+``` javascript
+dragView.init({
+    item: 'view-box',           //拖拽模板Class
+    panel: 'dragView_panel',
+    module: 'drag_module'
+});
+```
